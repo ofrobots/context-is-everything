@@ -7,6 +7,7 @@ module.exports = {
     binders.forEach(function(binder) {
       callback = binder(callback);
     });
+    return callback;
   },
 
   register: function(bindFunction) {
